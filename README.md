@@ -1,6 +1,6 @@
 # discord-dms-opener
 
-A simple tool to open all your discord DMs from your discord data folder  
+A simple tool to open all your discord DMs from your discord data folder(you will have to request your data from discord itself)  
 This tool is extremely helpful when mass purging your discord messages
 
 ## Usage 
