@@ -3,6 +3,10 @@
 A simple tool to open all your discord DMs using your discord data folder(you will have to request your data from discord itself)  
 This tool is extremely helpful when mass purging your discord messages
 
+### Disclaimer
+Any sort of automation violates Discord's TOS and can result in account termination.  
+Use it at your own risk.
+
 ## Usage 
 
 #### Clone this project 
