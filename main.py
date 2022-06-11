@@ -38,7 +38,7 @@ async def on_ready():
         fetched_user = await client.fetch_user(user)
         await fetched_user.create_dm()
         print(f'Created DMS with {user}')
-        # Uncomment the bottom lines if you would like to add a user to ignore list after opening its dms
+        # Uncomment the lines below if you wish to add a user to ignore list after opening its DMs
         """
         ignored_channels_list.append(user)
         with open("ignored_channels.json", "w") as f:
