@@ -1,7 +1,7 @@
-
 import json
 import os
 import discord
+from termcolor import colored
 
 print("Starting")
 
@@ -33,17 +33,17 @@ client = discord.Client()
 async def on_ready():
     for user in user_list:
         if int(user) in ignored_channels_list:
-            print(f"Ignoring user {user} ")
+            print(colored(f"Ignoring user {user}", "white"))
             return
         fetched_user = await client.fetch_user(user)
         await fetched_user.create_dm()
         print(f'Created DMS with {user}')
-        # Uncomment the bottom lines if you would like to add a user to ignore list after opening its dms
+        # Uncomment the lines below if you wish to add a user to ignore list after opening its DMs
         """
         ignored_channels_list.append(user)
         with open("ignored_channels.json", "w") as f:
             json.dump(ignored_channels_file, f)
-        print(f'Added {user} to ignored list')
+        print(colored(f'Added {user} to ignore list', 'yellow'))
         """
 
 client.run(

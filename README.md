@@ -4,7 +4,7 @@ A simple tool to open all your discord DMs using your discord data folder(you wi
 This tool is extremely helpful when mass purging your discord messages
 
 ### Disclaimer
-Any sort of automation violates Discord's TOS and can result in account termination.  
+Any sort of automation violates [Discord's TOS](https://support.discord.com/hc/en-us/articles/115002192352-Automated-user-accounts-self-bots) and can result in account termination.  
 Use it at your own risk.
 
 ## Usage 
@@ -14,7 +14,10 @@ Use it at your own risk.
 git clone https://github.com/Empyreann/discord-dms-opener
 cd discord-dms-opener
 ```
-
+#### Install Dependencies
+```bash
+pip install -r requirements.txt
+```
 #### Configure `config.json`
 ```json
 {
