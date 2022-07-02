@@ -4,21 +4,23 @@ A simple tool to open all your discord DMs using your discord data folder(you wi
 This tool is extremely helpful when mass purging your discord messages
 
 ### Disclaimer
-Any sort of automation violates [Discord's TOS](https://support.discord.com/hc/en-us/articles/115002192352-Automated-user-accounts-self-bots) and can result in account termination.  
+Any sort of automation (including this) violates [Discord's TOS](https://support.discord.com/hc/en-us/articles/115002192352-Automated-user-accounts-self-bots) and can result in account termination.  
 Use it at your own risk.
 
 ## Usage 
 
-#### Clone this project 
+#### 1. Clone this project 
 ```bash
 git clone https://github.com/Empyreann/discord-dms-opener
 cd discord-dms-opener
 ```
-#### Install Dependencies
+#### 2. [OPTIONAL] Create a virtual environment 
+[Guide](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#creating-a-virtual-environment)
+#### 3. Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
-#### Configure `config.json`
+#### 4. Configure `config.json`
 ```json
 {
         "USER_ID": " your user ID here ",
@@ -26,13 +28,13 @@ pip install -r requirements.txt
         "FOLDER_PATH": "your discord data message folder"
 }
 ```
-#### [OPTIONAL] Ignore users by adding their ids in `ignored_channels.json`
+#### 5. [OPTIONAL] Ignore users by adding their ids in `ignored_channels.json`
 ```json
 {
         "IGNORED_CHANNELS": []
 }
 ```
-#### Run `main.py`
+#### 6. Run `main.py`
 *You will need Python 3+ to use this*
 ```bash
 python main.py
