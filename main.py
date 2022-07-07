@@ -32,9 +32,9 @@ client = discord.Client()
 @client.event
 async def on_ready():
     for user in user_list:
-        if int(user) in ignored_channels_list:
+        if user in ignored_channels_list:
             print(colored(f"Ignoring user {user}", "white"))
-            return
+            continue
         fetched_user = await client.fetch_user(user)
         await fetched_user.create_dm()
         print(f'Created DMS with {user}')
