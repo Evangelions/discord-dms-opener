@@ -24,15 +24,16 @@ for root, dirs, files in os.walk(FOLDER_PATH):
             if main_data["type"] == 1:
                 target_user = main_data["recipients"]
                 target_user.remove(f"{USER_ID}")
-                user_list.append(target_user[0])
+                user_list.append(int(target_user[0]))
 
 client = discord.Client()
+ignored_channels_list = list(map(int, ignored_channels_list))
 
 
 @client.event
 async def on_ready():
     for user in user_list:
-        if int(user) in ignored_channels_list:
+        if user in ignored_channels_list:
             print(colored(f"Ignoring user {user}", "white"))
             continue
         fetched_user = await client.fetch_user(user)
