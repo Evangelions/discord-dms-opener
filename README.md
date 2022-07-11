@@ -41,4 +41,4 @@ python main.py
 ```
 
 ## Mass deletion 
-If you're using this tool for mass purging messages, It is recommended to first use this tool and open all your DMs and then use a tool like [discord-delete](https://github.com/adversarialtools/discord-delete) to purge all your discord messages from DMs and servers.
+If you're using this tool for mass purging messages, It is recommended to first use this tool and open all your DMs and then use a tool like [discord-delete](https://github.com/cedws/discord-delete) to purge all your discord messages from DMs and servers.
