@@ -46,7 +46,7 @@ async def on_ready():
             json.dump(ignored_channels_file, f)
         print(colored(f'Added {user} to ignore list', 'yellow'))
         """
+    print(colored("All dms have been opened", "green"))
+    await client.close()
 
-client.run(
-    f"{TOKEN_AUTH}",
-    bot=False)
+client.run(f"{TOKEN_AUTH}")
